@@ -1,0 +1,76 @@
+:root{
+    --white : #fff;
+    --body : #212631;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    .sidebar {
+        height: 100vh;
+        width: 20%;
+        background-color: var(--body);
+
+        .logo {
+            img {
+                transition: transform .2s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .menus {
+            .menu{
+                a {
+                color: rgb(234, 229, 229);
+
+                button {
+                    color: rgb(234, 229, 229);
+
+                    &:hover {
+                        color: var(--white);
+                        background-color: var(--body);
+                    }
+                }
+            }
+
+            &:hover {
+                color: var(--white);
+                background-color: var(--body);
+            }
+            }
+        }
+    }
+    .content {
+        width: 80%;
+        height: 100vh;
+        background-color: rgb(187, 123, 39);
+
+        nav{
+            height: 73px;
+        }
+
+        .header{
+            height: 40px;
+            background-color: var(--white);
+        }
+
+        .cards{
+            .row{
+                .card{
+                    min-width: 250px;
+                    max-width: 250px;
+                    height: 150px;
+                    
+                }
+            }
+
+        }
+    }
+}
+
