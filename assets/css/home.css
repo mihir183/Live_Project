@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Chat Button  */
+.chat{
+    z-index: 100;
+    position: absolute;
+    bottom: 55px;
+    right: 25px;
+    position: fixed;
+    font-size: 200%;
+}
+
+.product{
+    .row{
+        justify-content: space-between; 
+    }
+}
+
+
+@media (max-width:577px)
+{
+    .product{
+        .row{
+            gap: 10;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .chat{
+        i{
+            font-size: 35px;
+        }
+    }
+
+    footer{
+        flex-direction: column;
+        ul{
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+}
