@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="assets/css/ahome.css">
     </head>
 
     <body>
@@ -44,15 +46,29 @@
 
         <!-- Content -->
 
+        <div class="container addP px-3">
+            <h2 class="text-capitalize mt-3 text-center">add product</h2>
+            <form action="#">
+                <label for="pname" class="form-label">Product Name</label>
+                <input type="text" name="pname" id="pname" class="form-control mb-3" autofocus required>
+                <label for="stock" class="form-label">Total Stock</label>
+                <input type="text" name="stock" id="stock" class="form-control mb-3" required>
+                <label for="pimg" class="form-label">Product Image</label>
+                <input type="file" name="pimg" id="pimg" class="form-control mb-3" required>
+                <button class="btn btn-success w-100">Add</button>
+            </form>
+        </div>
+
+
         <div class="container pt-5">
             <div class="row row-cols-4">
                 <a href="Product.html" class="text-decoration-none text-dark">
-                    <div class="col py-4 border border-dark d-flex flex-column align-items-center justify-content-center">
+                    <div class="col px-5 py-1 border border-dark d-flex flex-column align-items-center justify-content-center">
                         <i class="fa-solid fa-boxes-stacked"></i>
-                        <h3>producs</h3>
+                        <h3 class="m-0">producs</h3>
                     </div>
                 </a>
-            </div>
+            </div>  
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
