@@ -46,6 +46,10 @@
 
         <!-- Content -->
 
+        <div id="message">
+
+        </div>
+
         <div class="container addP px-3">
             <h2 class="text-capitalize mt-3 text-center">add product</h2>
             <form action="#">
@@ -55,7 +59,7 @@
                 <input type="text" name="stock" id="stock" class="form-control mb-3" required>
                 <label for="pimg" class="form-label">Product Image</label>
                 <input type="file" name="pimg" id="pimg" class="form-control mb-3" required>
-                <button class="btn btn-success w-100">Add</button>
+                <button type="button" class="btn btn-success w-100" id="add">Add</button>
             </form>
         </div>
 
@@ -74,6 +78,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
             crossorigin="anonymous"></script>
+
+        <script>
+            document.getElementById('add').addEventListener("click",()=>{
+                document.getElementById('message').innerHTML = 'mii'
+            })
+        </script>
     </body>
 
 </html>
